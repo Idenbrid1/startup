@@ -1,0 +1,103 @@
+<%= render partial: "/layouts/navbar_coperatesite" %>
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container">
+
+      <div class="intro-img">
+        
+        <%= image_tag("intro-img.svg", :alt => "Flexslider" , :class => "img-fluid")%>
+      </div>
+
+      <div class="intro-info">
+        <h2>We provide<br><span>solutions</span><br>for your business!</h2>
+        <div>
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="#services" class="btn-services scrollto">Our Services</a>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+
+   <!-- #product -->
+    <section id="products" class="section-bg">
+      <div class="container">
+        <header class="section-header">
+          <h3>Products</h3>
+          <p>product</p>
+        </header>
+        <div class="row">
+          <div class="col-md-8 col-lg-8  wow bounceInUp" data-wow-duration="1.4s">
+
+              <div class="box">
+                
+                 <%= image_tag("portfolio/web3.jpg", :alt => "Flexslider" , :class => "img-fluid")%>
+                 <%= link_to "Products", products_path,class:"btn btn-primary",id:"productbtn" %>
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-8  wow bounceInUp" data-wow-duration="1.4s" id="box1">
+              <div class="box">
+               
+                 <%= image_tag("portfolio/app3.jpg", :alt => "Flexslider" , :class => "img-fluid")%>
+                 <%= link_to "ClientsProducts", clientproducts_path,class:"btn btn-primary",id:"productbtn" %>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section><!-- #product -->
+
+
+
+<section id="services" class="section-bg">
+
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <header class="section-header">
+          <h3>Press release section</h3>
+          
+  </header>
+   <div class="row" id="newletterbox">
+    <% @pressses.each do |presss| %>
+    
+    <div class="col-lg-3 offset-lg-1 wow bounceInUp" data-wow-duration=" 1.4s">
+      
+      <div class="box" >
+        <div class="title">
+          <h5>Press release</h5>
+         <!--  <div>Title:</div>
+          <div>Press date:</div>
+          <div>Body:</div> -->
+        </div>
+        
+          <h4 class="title"><%= presss.title %></h4>
+          <p class="title1"><%= presss.press_date %></p>
+          <p class="description"><%= presss.body.first(80) %></p>
+          <div>
+            <%= link_to 'Show', presss, class:"btn btn-info" %>
+            <% if current_user.admin %>
+            <%= link_to 'Edit', edit_presss_path(presss), class:"btn btn-success" %>
+            <%= link_to 'Destroy', presss, class:"btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %>
+            <% end %>
+          </div>
+        
+      </div>
+    </div>
+    <% end %>
+  </div>
+    <%= will_paginate @pressses,id:'paginate' %>
+
+</div>
+<%= link_to 'Back', newzs_path,class:"btn btn-primary"  %>
+<% if current_user.admin %>
+<%= link_to 'New Presss', new_presss_path,class:'btn btn-success' %>
+<% end %>
+</section>
+
+ <!--==========================
+    Footer
+  ============================-->
+ <%= render partial: "/layouts/footer" %>
+ <!-- #footer -->

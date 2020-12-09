@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ir date:</strong>
+  <%= @i_rmain.ir_date %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @i_rmain.title %>
+</p>
+
+<p>
+  <strong>Ir file:</strong>
+  <%= @i_rmain.ir_file %>
+</p>
+<div>
+ <%= link_to 'printable IR news (pdf)', i_rmain_path(@i_rmain, format: "pdf") %> 
+</div>
+<%= link_to 'Edit', edit_i_rmain_path(@i_rmain) %> |
+<%= link_to 'Back', i_rmains_path %>

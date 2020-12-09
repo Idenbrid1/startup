@@ -1,0 +1,272 @@
+<!--==========================
+  Header
+  ============================-->
+  
+<%= render partial: "/layouts/navbar_coperatesite" %>
+
+<style type="text/css">
+ 
+#team .member {
+  text-align: center;
+  margin-bottom: 0px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#team .member .member-info {
+  opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+body, p, ol, ul, td{
+  font-family: 'Libre Franklin', sans-serif;
+}
+#team .member .member-info-content {
+  margin-top: 50px;
+  transition: margin 0.2s;
+}
+#team .member:hover .member-info {
+  background: rgba(0, 62, 128, 0.7);
+  opacity: 1;
+  transition: 0.4s;
+}
+#team .member:hover .member-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #fff;
+}
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 10px;
+  color: #fff;
+}
+#team .member .social {
+  margin-top: 15px;
+}
+#team .member .social a {
+  transition: none;
+  color: #fff;
+}
+#team .member .social a:hover {
+  color: #007BFF;
+}
+#team .member .social i {
+  font-size: 12px;
+  margin: 0 2px;
+}
+</style>
+<style type="text/css">
+            *:focus{
+              outline: none;
+            }
+
+            body{
+              overflow-x: hidden;
+              margin: 0;
+              font-family: 'Libre Franklin', sans-serif;
+              padding: 0;
+              box-sizing: border-box;
+            }
+            p{
+              font-size: 100%;
+              line-height: 2;
+              letter-spacing: 1.2px;
+              color: #9DA0A4 !important;
+            }
+            strong  {
+              color:#000 !important;
+            }
+            ul li {
+              font-size: 110%;
+    line-height: 1.45;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    z-index: 5;
+            }
+            .sns-buttons li{
+              margin-bottom: 0 !important;
+            }
+            .listUl a {
+             color: #9DA0A4 !important;
+              text-decoration: none;
+              background-color: transparent;
+          }
+            .listUl  a:hover {
+             color: #9DA0A4;
+              text-decoration: none;
+              background-color: transparent;
+          }  
+          .nav-tabs .nav-link {
+    border: 0px;
+}             
+.nav-tabs {
+    border-bottom: 0px solid #dee2e6;
+}
+.member{
+  text-align: center;
+    margin-bottom: 0;
+    position: relative;
+    border-radius: 50%;
+    height: 130px;
+    overflow: hidden;
+    width: 130px;
+    border: 2px solid;
+}
+.member img{
+  height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media(max-width: 600px){
+  .mplr-15{
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  .nav-tabs .nav-link {
+    border: 0px;
+    padding-left: 0;
+}
+.member{
+  height: 100px; width:100px;
+}
+.member img{
+  height: 80px; width:80px;
+}
+.mmt-3rem{
+  margin-top: 3rem !important;
+}
+}
+        </style>
+<div class="col-md-9 mx-auto opcity2">
+                 <div>
+                  <div class="text-center my-5">
+                   <h3 class="text-uppercase pt-5">Members</h3>
+                   <p class="pb-5 text-center" style="color: #9e9e9e">メンバー</p>
+                  </div>
+                   <div class="row mb-5 pb-5">
+                     <div class="col-md-5 mx-auto">
+                      
+<ul class="nav nav-tabs"   id="team" role="tablist">
+    <li class="nav-item col-lg-4 col-md-4 col-4">
+      <a class="nav-link active" data-toggle="tab" href="#home2">
+        <div class="member">
+          <%= image_tag("memberSection/chairpersonn.png", :alt => "team" , :class => "img-fluid")%>
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4> Chairperson</h4>
+                </div>
+              </div>
+            </div>
+           
+      </a>
+       <div>
+                <h6 class="text-center">F. Saleem</h6>
+              </div>
+    </li>
+    <li class="nav-item col-lg-4 col-md-4 col-4">
+      <a class="nav-link" data-toggle="tab" href="#menu1">
+        <div class="member">
+               <%= image_tag("memberSection/bossss.png", :alt => "team" , :class => "img-fluid")%>
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4> CEO</h4>
+                </div>
+              </div>
+            </div>
+            
+      </a>
+      <div>
+                <h6 class="text-center">Souga Nakamura </h6>
+              </div>
+    </li>
+    <li class="nav-item col-lg-4 col-md-4 col-4">
+      <a class="nav-link" data-toggle="tab" href="#menu2">
+       <div class="member">
+              <%= image_tag("memberSection/ctooo.png", :alt => "team" , :class => "img-fluid")%>
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4> CTO </h4>
+                </div>
+              </div>
+            </div>
+           
+      </a>
+       <div>
+                <h6 class="text-center">Aska Ikeda </h6>
+              </div>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+                     </div>
+                     <div class="row m-0 mmt-3rem">
+                       <div class="col-md-3 listUl  mplr-15 d-none d-md-block">
+                       <ul class="pl-0" style="list-style: none;text-align: left; text-transform: capitalize;">
+                         <li><a href="<%= coperates_path %>">Motto</a></li>
+                         <li><a href="<%= historys_path %>">Timeline</a></li>
+                         <li><a href="<%= companys_path %>">Company Profile</a></li>
+                         <li><a href="<%= officers_path %>"><strong>Members</strong></a></li>
+                       </ul>
+                     </div>
+                     <div class="col-md-9">
+                       <div class="tab-content">
+                      <div id="home2" class="container tab-pane active"><br>
+                        <div class="text-left">
+                         <h5 class="my-5">F. Saleem / Chairperson・Founder</h5>
+                         <p class="my-4">British-born Saleem graduated with honours from the Univeristy of Kent in England, before travelling to East Asia where she founded a successful food company in Japan. With over 8 years of experience in branding with a strong focus on visual marketing, Saleem's strength lies in reaching out to new and current customers and generating a hgh level of user response and interactivity, both online and offline. At Idenbrid, her focus lies on PR, branding and marketing and heading a new jewellery and accesory venture. </p>
+                       </div>
+                      </div>
+                      <div id="menu1" class="container tab-pane fade"><br>
+                       <div class="text-left">
+                         <h5 class="my-5">Souga Nakamura / CEO・Founder</h5>
+                         <p class="my-4">After graduating from the Department of International law at the reknown Aoyama Gakuin University in Tokyo, Nakamura founded a highly popular bakery and catering company in a number of world famous high-end department stores located in the heart of Tokyo. Following his true passion for IT and HR, he set his sights on Pakistan and established Idenbrid in January 2020, developing the online recruitment web apllications "Zindawork" and" bizblanca" with the aim of positively impacting the job sector of Pakistan. </p>
+                       </div>
+                      </div>
+                      <div id="menu2" class="container tab-pane fade"><br>
+                        <div class="text-left">
+                         <h5 class="my-5">Aska Ikeda / CTO</h5>
+                         <p class="my-4">Along with working for Idenbrid, Ikeda is currently employed for Softbank Japan as a data scientist & analyst. Ikeda's main point of focus at Idenbrid is to manage the development of our platforms and maintain our future vision from a tech perspective. <span style="visibility: hidden;">Along with working for Idenbrid, Ikeda is currently employed for Softbank Japan as a data scientist & analyst. Ikeda's main point of focus at Idenbrid is to manage the development of our platforms and maintain our future vision from a tech perspective.</span></p>
+                       </div>
+                      </div>
+                    </div>
+                     </div>
+                     </div>
+                   </div>
+                 </div>
+              </div>
+
+    
+
+
+    <!--==========================
+    Footer
+  ============================-->
+  <%= render partial: "/layouts/footer" %>
+  <!-- #footer -->

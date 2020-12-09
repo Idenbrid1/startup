@@ -1,0 +1,106 @@
+<%= render partial: "footer" %>
+
+
+
+
+
+
+
+// index.js
+const express = require('express')
+const app = express()
+const port = 3000
+app.get('/', (req, res) => res.send('I am Node!'))
+app.listen(port, () => console.log(`My blog is listening on port ${port}!`))
+
+<!-- <p id="notice"><%= notice %></p>
+
+<h1>Media</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Media date</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @media.each do |medium| %>
+      <tr>
+        <td><%= medium.title %></td>
+        <td><%= medium.media_date %></td>
+        <td><%= medium.body %></td>
+        <td><%= link_to 'Show', medium %></td>
+        <td><%= link_to 'Edit', edit_medium_path(medium) %></td>
+        <td><%= link_to 'Destroy', medium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Medium', new_medium_path %>
+ -->
+
+  <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+           <h3>IDENBRID</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links" style="text-align: left;">
+            <h4>Useful Links</h4>
+            <ul>
+              <li class="active"><%= link_to "Coperate Website", coperates_path,id:"coperate" %></li>
+            <!-- <li><%= link_to "IR information", informations_path %></li> -->
+              <li><a href="<%= products_path %>">Product</a></li>
+              <li><%= link_to "Portfolio", media_path %></li>
+              <li><a href="#services">news</a></li>
+              <li class="nav-item"><%= link_to "Contact", new_contact_path %></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact" style="text-align: left;">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a class="fb-ic" href="https://www.facebook.com/zindawork/" target="_blank"> <i class="fa fa-facebook"> </i> </a>
+              <!-- <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> -->
+              <a class="ins-ic" href="https://www.instagram.com/zindawork/?utm_source=ig_embed" target="_blank"> <i class="fa fa-instagram"> </i> </a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href ="<%= admins_home_path %>">S</a>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4 style="text-align: left;">Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+         <div class="copyright">
+           &copy; Copyright <strong>Idenbrid</strong>. All Rights Reserved
+        </div>
+      </div>
+
+    </div>

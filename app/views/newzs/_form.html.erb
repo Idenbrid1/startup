@@ -1,0 +1,37 @@
+<%= form_with(model: newz, local: true) do |form| %>
+  <% if newz.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(newz.errors.count, "error") %> prohibited this newz from being saved:</h2>
+
+      <ul>
+        <% newz.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :publish_date %>
+    <%= form.date_select :publish_date %>
+  </div>
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

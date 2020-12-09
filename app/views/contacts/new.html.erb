@@ -1,0 +1,98 @@
+<!--==========================
+  Header
+  ============================-->
+  <%= render partial: "/layouts/navbar_coperatesite" %>
+<style type="text/css">
+  #contact .form-control {
+    background: #e0dada2e;
+    border: none;
+    border: 1px solid #e0dada2e;
+    border-radius: 0px;
+    box-shadow: none;
+    color: #847f7f;
+    font-size: 16px;
+    margin-bottom: 60px;
+    transition: all 0.4s ease-in-out;
+}
+ul li {
+              font-size: 110%;
+    line-height: 1.45;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    z-index: 5;
+            }
+            .sns-buttons li{
+              margin-bottom: 0 !important;
+            }
+#contact input {
+    height: 50px;
+}
+::placeholder{
+  color: #847f7f;
+}
+.mujtaba::placeholder{
+  color: #847f7f !important;
+}
+</style>
+</br>
+<!-- Contact section -->
+    <section id="contact" class="parallax-section pb-5 opcity2" >
+      <div class="skinny_wrapper wrapper_padding">
+      <div class=""></div>
+      <div class="container">
+        <div class="row mt-5">
+
+             <div class="col-md-12 pt-4">
+               <div class="text-center">
+                 <h3>CONTACT</h3>
+                 <div class="text-center">お問い合わせ</div>
+               </div>
+             </div>
+
+          <div class="col-md-6  mx-auto pt-0">
+                <div class="wow fadeInUp section-title text-center text-white mb-5" data-wow-delay="0.3s">
+                    <h2>Say hello to Idenbrid!</h2>
+                    <h4>we are always ready to serve you!</h4>
+                </div>
+            <div class="contact-form wow fadeInUp" data-wow-delay="0.7s">
+              <%= form_for @contact do |f| %>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <%= f.label :Name・お名前 , :style=> "color:#000;font-weight:600;" %>
+                    <%= f.text_field  :name, required: true, class: "form-control", placeholder:"Enter name" %>
+
+                    <%= f.label :Email・メールアドレス, :style=> "color:#000;font-weight:600;" %>
+                    <%= f.text_field :email, required: true, class: "form-control", placeholder:"Enter email" %>
+
+                    <%= f.label :Message・内容, :style=> "color:#000;font-weight:600;" %>
+                    <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "form-control mujtaba", placeholder:"Send me a message"%>
+
+                    <!-- <div class="hidden">
+                      <%= f.label :nickname %>
+                      <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+                    </div> -->
+                    <div style="display: flex;justify-content: end;align-items: center;">
+                      <%= f.check_box("terms_of_service", :checked => false) %> 
+                      <label class="mb-0" style="color:#000;font-size: 13px;" for="cbox1">&nbsp; Accept Terms and Conditions</label>
+                      
+                    </div>
+                    <p style="letter-spacing: 1.4px;line-height: 1.54">Idenbrid Inc. will comply with laws and regulations regarding the protection of personal information and will handle your personal information based on our privacy policy.</p>
+                    <div class="text-center">
+                      <%= f.submit 'Send Message', class: 'btn btnSend' %> 
+                    </div>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!--==========================
+    Footer
+  ============================-->
+  <%= render partial: "/layouts/footer" %>
+  <!-- #footer -->

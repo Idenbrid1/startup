@@ -1,0 +1,28 @@
+
+
+  <section id="services" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>News</h3>
+          <p>news</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-10 col-lg-12">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title"><%= @newz.name %></h4>
+              <h4 class="title"><%= @newz.title %></h4>
+              <p class="title1"><%= @newz.publish_date %></p>
+              <p class="description"> <%= @newz.body %></p>
+            </div>
+          </div>
+         </div>
+     </div>
+    <div class="text-left">
+     <%= link_to 'Back', get_newzs_path , class:"btn btn-info"%>
+   </div>
+   </section><!-- #services -->
+   

@@ -1,0 +1,127 @@
+<!--==========================
+  Header
+  ============================-->
+  
+<%= render partial: "/layouts/navbar_coperatesite" %>
+
+ <!-- products index -->
+    
+
+   <style type="text/css">
+       .pparag {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1.2px;
+    color: #9DA0A4 !important;
+    font-weight: 500;
+    text-align: center;
+}
+ul li {
+              font-size: 110%;
+    line-height: 1.45;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    z-index: 5;
+            }
+            .sns-buttons li{
+              margin-bottom: 0 !important;
+            }
+body, p, ol, ul, td {
+    font-family: 'Libre Franklin' !important;
+}
+@media(max-width: 600px){
+    .mpb0m{
+    margin-bottom: 0!important;
+    padding-bottom: 0!important;
+  }
+  .flex-d-reverse{
+    flex-direction: column-reverse;
+  }
+}
+   </style>
+
+    <div class="main main-products">
+            <div class="col-md-9 mx-auto opcity2" id="products-index">
+                <section id="products-decorations">
+                    <div class="bar-wrapper layer-top move-slow">
+                        
+                     <!--  <%= image_tag("line-left.svg", :alt => "Flexslider" , :class => "bar", :style => "height:535;width:227;")%> -->
+                    </div>
+                    <div class="bg-wrapper layer-bottom move-fast">
+                        <!-- <img height="982" src="images/bg-txt.svg" width="131" /> -->
+                        <%= image_tag("bg-txt.svg",:style => "height:982; width:131;")%>
+                    </div>
+                </section>
+                <section id="products-contents">
+                    <section id="products-top">
+                        <div class="lead">
+                            <h3 class=" text-center text-uppercase" style="padding-top:100px;color: #000;">Services</h3>
+                            <div class="lead-sub text-center" style="color: #9e9e9e">サービス</div>
+                        </div>
+                        <div class="text-block">
+                            <p class="pparag">Idenbrid creates new digital platforms which serve as a point of online infratructure, helping to imporove the lives of Pakistani people. </p>
+                        </div>
+                    </section>
+                    <section class="my-5 pb-5 mpb0m">
+                        
+                        <div class="row m-0 flex-d-reverse">
+                            <div class="col-md-7 mb-4">
+                                 <%= image_tag("topSlider/comingsoon1.jpg", :alt => "Flexslider" , :class => "imgComingsoon")%>
+                            </div>
+                            <div class="col-md-5 mb-4">
+                                 <div class="title">
+                                <h2 style="color: #000;">Zindawork</h2>
+                                <div class="title-sub mb-5" style="color: #000">Web</div>
+                            </div>
+                            <div class="description">
+                                <h3 class="description-main" style="font-weight: 600; color:#000">“Your Best Career. The Best You”</h3>
+                                <p class="pparag mb-5" style="text-align: left;">
+                                    Zindawork is a modern job search platform launched in 2020 in Pakistan. We created Zindawork with the purpose of helping individuals find their dream career and allowing companies to find a strong HR team to grow with. We believe life is not just about finding a job for “rozee roti”, but to find the perfect match between employee and employer to create a shared sense of community and work spirit.  
+                                </p>
+                            </div>
+                            <div class="button-block">
+                                <a class="btn-pt" target="_blank" href="http://www.zindawork.com/">See more</a> &nbsp;&nbsp;
+                                
+                            </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="py-5 mb-5">
+                        
+                        <div class="row m-0">
+                            
+                            <div class="col-md-5 mb-4">
+                                 <div class="title">
+                                <!-- <img class="title-main" src="images/people-logo.svg" /> -->
+                                <h2 style="color: #000;">bizblanca</h2>
+                                <div class="title-sub mb-5" style="color: #000;">Web</div>
+                            </div>
+                            <div class="description">
+                                <h3 class="description-main" style="font-weight: 600; color:#000">"Where is your potential"</h3>
+                                <p class="pparag mb-5" style="text-align: left;">
+                                    bizblanca is a an easy and simple recruitment website with a strong focus on user experience and modern UI. We want to make it easy for users to find a job and to create a platform that welcomes users from all walks of life.  
+                                </p>
+                            </div>
+                            <div class="button-block">
+                                <a class="btn-pt" target="_blank" href="https://www.facebook.com/bizblanca/?pageid=105653477854123&ftentidentifier=105664614519676&padding=0"> See more</a>
+                            </div>
+                            </div>
+                            <div class="col-md-7 mb-4">
+                                 <%= image_tag("topSlider/comingsoon2.jpg", :alt => "Flexslider" , :class => "imgComingsoon")%>
+                            </div>
+                        </div>
+                    </section>
+                   
+                </section>
+            </div>
+        </div>
+
+   
+ <!--==========================
+    Footer
+  ============================-->
+
+
+  <%= render partial: "/layouts/footer" %>
+ <!-- #footer -->

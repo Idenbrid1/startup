@@ -1,0 +1,199 @@
+<!--==========================
+  Header
+  ============================-->
+  
+<%= render partial: "/layouts/navbar_coperatesite" %>
+
+<style type="text/css">
+            *:focus{
+              outline: none;
+            }
+
+            body{
+              overflow-x: hidden;
+              margin: 0;
+              font-family: 'Libre Franklin', sans-serif;
+              padding: 0;
+              box-sizing: border-box;
+            }
+            p{
+              font-size: 100%;
+              line-height: 2;
+              letter-spacing: 1.2px;
+              color: #9DA0A4 !important;
+            }
+            strong  {
+              color:#000 !important;
+            }
+            ul li {
+              font-size: 110%;
+    line-height: 1.45;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    z-index: 5;
+            }
+            .sns-buttons li{
+              margin-bottom: 0 !important;
+            }
+            .listUl a {
+             color: #9DA0A4 !important;
+              text-decoration: none;
+              background-color: transparent;
+          }
+            .listUl  a:hover {
+             color: #9DA0A4;
+              text-decoration: none;
+              background-color: transparent;
+          }  
+          .nav-tabs .nav-link {
+    border: 0px;
+}             
+.nav-tabs {
+    border-bottom: 0px solid #dee2e6;
+}
+.member{
+  text-align: center;
+    margin-bottom: 0;
+    position: relative;
+    border-radius: 50%;
+    height: 130px;
+    overflow: hidden;
+    width: 130px;
+    border: 2px solid;
+}
+.member img{
+  height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.gradient-text {
+    background-color: #05c4ff00;
+    background-image: linear-gradient(45deg, #a1a2c1, #04e8ff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    -moz-text-fill-color: transparent;
+}
+@media(max-width: 600px){
+  .imgsik {
+ height: auto !important;
+  }
+}
+        </style>
+
+<div class="main">
+    <div class="col-md-9 mx-auto careers opcity2" id="careers-values">
+      <div class="lead text-center my-5">
+        <h3 class="pt-5 text-uppercase">Our challenge</h3>
+        <div class="lead-sub" style="color: #9e9e9e">挑戦</div>
+      </div>
+     <div class="row ">
+          <div class="col-md-3 listUl">
+                       <ul class="pl-0" style="list-style: none;text-align: left; text-transform: capitalize;">
+                         <li><a href="<%= media_path %>"><strong>Our challenge</strong></a></li>
+                         <li><a class="" href="<%= environments_path %>">Idenbrid HQ</a></li>
+                         <li><a class="" href="<%= recruits_path %>">Apply for us</a></li>
+                       </ul>
+                     </div>
+          
+       <div class="col-md-9 mb-5">
+          <div class="">
+        
+        <div>
+            <div class="image-block mb-5"> 
+              <%= image_tag("challenge_positive.jpg", :alt => "Flexslider" , :class => "head-image image-shadow imgsik", :style=> "width:100%;height:500px")%>
+            </div>
+          <div class="text-block">
+            <h2 class="gradient-text">Handling Challenges and taking pressure to achieve our future goals </h2>
+            <div class="statement">
+              <p>"How much of your life do you spend working?
+                  The answer is "30%". 30% of the time between birth and death is taken up working.
+                  For some people this time may be even longer. Living to work, not working to live. 
+                  In that case, it is important to think about how you can spend that time meaningfully.
+                </p>
+                <p>
+                  People in the world who feel various emotions through the work they do:
+                  "I wonder if I can finish my work sooner" "I want to play with my kids on the weekends" "I wonder if I should quit because the relationships within the company are not good" "I want to work at a company with better values" "I don't feel that the work content is worth my time and effort."
+                  These people have yet to meet the exciting work that is overflowing in the world.
+                 </p>
+                 <p>
+                  So how do you find an exciting job?
+                  </p>
+                  <p>
+                  To get a job that makes life exciting, you need a boss you can respect and a loyal companions who can continue to take on difficult challenges together.
+                  There is nothing less fulfilling than a simple job. Therefore, you can grow only by challenging something higher than your current level.
+                  </p>
+                  <p>
+                  We have many world-class challenges.
+                  If you work hard, we want you to hit a lot of high walls and overcome them to gain higher experience points.
+
+                  And we want you to succeed one by one in projects that you couldn't accomplish by yourself, and prove to yourself how much you are actually capable of.
+
+                  We are waiting for people who are highly conscious, boldly confront high-reaching goals, and want to tackle major social issues."
+              </p>
+            </div>
+          </div>
+          <div class="left-image-wrapper">
+          </div>
+          <div class="text-block values my-4" style="color: #000">
+            <h4 class="mt-5">At Idenbrid,</h4>
+            <p style="color: #000 !important">At Idenbrid, we have the following manifesto to create services and work environments, whilst continuing self-improvement and self-reflection.</p>
+          </div>
+          <div class="text-block values mt-5" id="careers-values-user-first">
+            <h3 class="gradient-text">Become an irreplaceable human resource</h3>
+            <p>Employees working at Idenbrid are required to become an irreplaceable and unique cog within the company. By working from an angle that no one else can, the services that we put out in the market should be refined to a level that only a sophisticated company can achieve. In other words, we are looking for employees who can strive to create services that cannot be achieved by other companies.
+            </p5
+          </div>
+          <div class="text-block values mt-5" id="careers-values-user-first">
+            <h3 class="gradient-text">Maximum output</h3>
+            <p>At Idenbrid, we focus on output, to keep in mind what each person should do every day. Instead of spending needless hours at meetings, we are more hands-on and ecourage you to get a feel for the projects yourself, and solve problems as they arise. Accumulation of small daily outputs is the key to daily growth
+            </p>
+          </div>
+          <div class="text-block values mt-5" id="careers-values-user-first">
+            <h3 class="gradient-text">Time and morals</h3>
+            <p>In order to maintain a professional work environment, proper etiquette and punctuality are important even in a friendly work environment. Those who can perform well according to a structured work environoment can grow into human resource who can succeed in any society.
+            </p>
+          </div>
+         </div>
+      </div>
+       </div>
+     </div>
+      
+      <!-- <div class="col-md-9 mx-auto">
+        <div class="row my-5">
+        <div class="col-md-4 mb-4">
+        <a target="_blank" href="#">
+          
+      <%= image_tag("summer_intern20.jpg", :alt => "Flexslider" , :class => "banner-image image-shadow", :style=> "width:100%;")%> 
+        </a>
+        </div>
+        <div class="col-md-4  mb-4">
+          <a target="_blank" href="#">
+           <%= image_tag("summer_intern20.jpg", :alt => "Flexslider" , :class => "banner-image image-shadow", :style=> "width:100%;")%>
+             
+        </a>
+        
+        </div>
+        <div class="col-md-4 mb-4">
+          <a target="_blank" href="#">
+           <%= image_tag("summer_intern20.jpg", :alt => "Flexslider" , :class => "banner-image image-shadow", :style=> "width:100%;")%>  
+        </a>
+        </div>
+      </div>
+      </div> -->
+    </div>
+  </div>
+
+<style type="text/css">
+  .footer {
+    padding: 0;
+    position: relative;
+}
+</style>
+<%= render partial: "/layouts/footer" %>

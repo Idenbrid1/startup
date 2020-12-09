@@ -1,0 +1,774 @@
+ <style type="text/css">
+    
+*:focus{
+  outline: none;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgba(0,0,0,.85);
+    background-image: url(/assets/hp_footer.png);
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.siku{
+  display: none;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:visited {
+    color: #fff; 
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.footer a, .sidebar a {
+    text-decoration: none;
+    transition: opacity 150ms ease;
+}
+
+  .footer {
+      width: 100%;
+      padding: 80px 30px 0px;
+      box-sizing: border-box;
+  }
+  .site-map {
+    width: 100%;
+    padding: 0 0 120px 0;
+    display: flex;
+    justify-content: space-between;
+}
+  .footer-inner {
+   
+}
+.site-map .section-title {
+    margin-bottom: 20px;
+}
+.viewport-small {
+    display: none !important;
+}
+.site-map li {
+    font-size: 100%;
+    line-height: 2;
+    letter-spacing: 1.8px;
+    opacity: 0.8;
+}
+.site-map-sub {
+    margin-bottom: 20px;
+}
+.site-map-sub ul {
+    display: flex;
+}
+.footer-inner .bar {
+    width: 100%;
+    height: 1px;
+    opacity: .5;
+    background: #fff;
+}
+.footer-appendix {
+    width: 100%;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-appendix .footer-company {
+    display: flex;
+    align-items: center;
+}
+.footer-appendix .copyright {
+    margin-left: 19px;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
+.footer-appendix .sns-buttons {
+    display: flex;
+    margin-right: 10px;
+}
+.footer-appendix .sns-buttons li {
+    padding-left: 18px;
+    font-size: 15px;
+}
+.viewport-small {
+    display: none !important;
+}
+
+
+
+.bar {
+    pointer-events: none;
+}
+.site-map-sub li {
+    margin-right: 30px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+li {
+    list-style: none;
+}
+.site-map-sub {
+    font-size: 12px;
+    opacity: .8;
+}
+.site-map section {
+    flex-shrink: 0;
+    flex-grow: 1;
+    padding: 5px;
+}
+.site-map h4 {
+    margin: 0;
+    font-size: 100%;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+li {
+    list-style: none;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+            body{
+              overflow-x: hidden;
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+
+.footer-inner {
+    color: #fff;
+}
+  @media(max-width: 767px){
+   
+    .btnrecuritment{
+      bottom: -30px !important;
+    }
+  }
+  </style>
+
+   <footer class="footer">
+                  <div class="footer-inner col-md-9 mx-auto">
+                    <div class="site-map" role="menubar">
+                      <section class="is-expanded">
+                        <div class="section-title" role="button" tabindex="">
+                          <h4>
+                            <%= link_to "Corporate info", coperates_path,id:"coperate" %>
+                          </h4>
+                          <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
+                        </div>
+                        <ul aria-expanded="true" aria-label="Corporate information" role="menu" style="height: 106.667px;">
+                          <li role="none">
+                            <a role="menuitem" href="<%= coperates_path %>" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Motto</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="<%= historys_path %>" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Timeline</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="<%= companys_path %>" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Company profile</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="<%= officers_path %>" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Members</font>
+                              </font>
+                            </a>
+                          </li>
+                        </ul>
+                      </section>
+                      <section class="is-expanded">
+                        <div class="section-title" role="button" tabindex="">
+                          <h4>
+                            <%= link_to "Services", products_path %>
+                          </h4>
+                          <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
+                        </div>
+                        <ul aria-expanded="true" aria-label="product" role="menu" style="height: 53.3333px;">
+                          <li role="none">
+                            <a role="menuitem" href="<%= products_path %>" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Zindawork</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="<%= products_path %>" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">bizblanca</font>
+                              </font>
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </section>
+                      
+                      <section class="is-expanded">
+                        <div class="section-title" role="button" tabindex="">
+                          <h4 class="text-capitalize">
+                            <%= link_to "Portfolio", clientproducts_path%>
+                          </h4>
+                          <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
+                        </div>
+                        <ul aria-expanded="true" aria-label="Employment information" role="menu" style="height: 186.667px;">
+                          <li role="none">
+                            <a role="menuitem" href="<%= clientproducts_path %>" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Our Client Works</font>
+                              </font>
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </section>
+
+
+                      <section class="is-expanded">
+                        <div class="section-title" role="button" tabindex="">
+                          <h4>
+                            <%= link_to "Recruitment", media_path %>
+                          </h4>
+                          <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
+                        </div>
+                        <ul aria-expanded="true" aria-label="Employment information" role="menu" style="height: 186.667px;">
+                          <li role="none">
+                            <a role="menuitem" href="<%= media_path %>" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Our challenge </font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="<%= environments_path %>" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Idenbrid HQ</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="<%= recruits_path %>" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Apply for Us</font>
+                              </font>
+                            </a>
+                          </li>
+                         </ul>
+                      </section>
+                      <section class="is-expanded">
+                        <div class="section-title" role="button" tabindex="">
+                          <h4>
+                            <a href="<%= newzs_path %>">News</a>
+                          </h4>
+                          <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
+                        </div>
+                        <ul aria-expanded="true" aria-label="news" role="menu" style="height: 106.667px;">
+                          <li role="none">
+                            <a role="menuitem" href="<%= newzs_path %>" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">all</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Press Release</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Media</font>
+                              </font>
+                            </a>
+                          </li>
+                        </ul>
+                      </section>
+                      <section class="is-expanded">
+                        <div class="section-title" role="button" tabindex="">
+                          <h4 class="text-capitalize">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">Blog</font>
+                            </font>
+                          </h4>
+                          <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
+                        </div>
+                        <ul aria-expanded="true" aria-label="Employment information" role="menu" style="height: 186.667px;">
+                          <li role="none">
+                            <a role="menuitem" href="<%= clientproducts_path %>" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Our Blog</font>
+                              </font>
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </section>
+                      <section class="is-expanded">
+                        <div class="section-title" role="button" tabindex="">
+                          <h4>
+                            <%= link_to "Contact Us", new_contact_path %>
+                          </h4>
+                          <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
+                        </div>
+                        <ul aria-expanded="true" aria-label="Contact Us" role="menu" style="height: 106.667px;">
+                          <li role="none">
+                            <a role="menuitem" href="<%= new_contact_path %>" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Get in touch</font>
+                              </font>
+                            </a>
+                          </li>
+                          
+                        </ul>
+                      </section>
+                    </div>
+                 
+
+
+
+                 <div class="site-map" style="padding: 0 !important;" role="menubar">
+                      <section class="is-expanded">
+                        <div class="section-title" role="button" tabindex="">
+                         <ul>
+                           <li>
+                             <a href="#">Terms and Conditions</a>
+                           </li>
+                         </ul>
+                          <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
+                        </div>
+                        
+                      </section>
+                      <section class="is-expanded">
+                        <div class="section-title" role="button" tabindex="">
+                          <ul>
+                            <li>
+                              <a href="#">Privacy Policy</a>
+                            </li>
+                          </ul>
+                          <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
+                        </div>
+                        
+                      </section>
+                      <section class="is-expanded" style="visibility: hidden;">
+                        <div class="section-title" role="button" tabindex="">
+                          <ul>
+                            <li>
+                              <a href="#">Privacy Policy</a>
+                            </li>
+                          </ul>
+                          <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
+                        </div>
+                        
+                      </section>
+                      <section class="is-expanded" style="visibility: hidden;">
+                        <div class="section-title" role="button" tabindex="">
+                          <ul>
+                            <li>
+                              <a href="#">Privacy Policy</a>
+                            </li>
+                          </ul>
+                          <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
+                        </div>
+                        
+                      </section>
+                      <section class="is-expanded" style="visibility: hidden;">
+                        <div class="section-title" role="button" tabindex="">
+                          <ul>
+                            <li>
+                              <a href="#">Privacy Policy</a>
+                            </li>
+                          </ul>
+                          <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
+                        </div>
+                        
+                      </section>
+                    </div>
+                    <div class="bar"></div>
+                    <div class="footer-appendix">
+                      <div class="footer-company">
+                        <div class="logo">
+                          <a href="<%= home_path %>">
+                            <!-- 
+                            <%= image_tag("idenbrid_99.png", :alt => "Flexslider" , :class => "img-responsive", :id => "logo", :style => "width:80px;padding:10px;")%> -->
+                            <h2>I<span style="font-size: 30px">denbrid</span></h2>
+                          </a>
+                          </div>
+                          <div class="copyright">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">© 2020 Idenbrid, Inc.<font>
+                            </font>
+                          </div>
+                        </div>
+                        <ul class="sns-buttons">
+                          <li>
+                            <a class="fb-ic" href="https://www.facebook.com/zindawork/" target="_blank"> <i class="fa fa-facebook"> </i> </a>
+                          </li>
+                          <li>
+                            <a target="_blank" href="#">
+                              <i class="fa fa-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="ins-ic" href="https://www.instagram.com/zindawork/?utm_source=ig_embed" target="_blank"> 
+                              <i class="fa fa-instagram"> </i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+<style type="text/css">
+  
+@media(max-width: 991px){
+  .footer {
+    height: 100vh;
+  }
+  .footer-inner{
+      display: none !important;
+    }  
+ 
+  .siku{
+  display: block;
+}
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+        color: #fff;
+}
+.accordion .card-header.collapsed:after {
+    content: "\f067"; 
+}
+  .site-map-sub li {
+     margin-right: 0px; 
+    line-height: 1.6;
+    flex-shrink: 0;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 22px;
+}
+.footer-appendix{
+  display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px; 
+}
+.logo{
+  line-height: 35px;
+}
+.sns-buttons{
+  display: flex;
+    width: 40%
+}
+.footer{
+  padding: 0;
+}
+.footer a{
+  padding: 0 12px !important; 
+}
+.copyright{
+  font-size: 11px;
+    color: #fff;
+    display: none;
+    float: right;
+}
+.footer-appendix{
+  position: absolute;
+    bottom: 25px;
+}
+.accordion {
+    padding-top: 3rem !important;
+    overflow-anchor: none;
+}
+.card-header{
+    border-top: 1px solid #fff4f480;
+  border-bottom: 1px solid #fff4f480;
+}
+.card{
+  border-bottom: 1px solid #fff4f480;
+  border-top: 1px solid #fff4f480;
+}
+.site-map-sub {
+    font-size: 12px;
+    opacity: .8;
+    margin-top: 15px !important;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    font-size: 15px;
+    color: #fff;
+    opacity: .8;
+}
+}
+</style>
+
+                      <div class="container p-0 siku opcity2" >
+    <div id="accordion" class="accordion">
+        <div class=" mb-0" style="background: transparent;">
+            <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne" style="background: transparent;">
+                <a class="card-title"> Corporate information </a>
+            </div>
+            <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
+                <ul aria-expanded="true" aria-label="Corporate information" role="menu">
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Motto</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Timeline</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Company Profile</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Members</font>
+                              </font>
+                            </a>
+                          </li>
+                        </ul>
+            </div>
+            <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                <a class="card-title"> Services </a>
+            </div>
+            <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
+                <ul aria-expanded="true" aria-label="product" role="menu">
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Zindawork</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">bizblanca</font>
+                              </font>
+                            </a>
+                          </li>
+                        </ul>
+            </div>
+            <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                <a class="card-title"> Protfolio </a>
+            </div>
+            <div id="collapseThree" class="collapse card-body" data-parent="#accordion">
+               <ul aria-expanded="true" aria-label="IR information" role="menu" >
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Our Client Works</font>
+                              </font>
+                            </a>
+                          </li>
+                        </ul>
+            </div>
+           <!--  -->
+<div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                <a class="card-title">Recruitment </a>
+            </div>
+            <div id="collapseFour" class="collapse card-body" data-parent="#accordion">
+               <ul aria-expanded="true" aria-label="Employment information" role="menu">
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+
+                                <font style="vertical-align: inherit;">Our Challenge</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Idenbrid HQ</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Apply For Us</font>
+                              </font>
+                            </a>
+                          </li>
+                          
+                        </ul>
+            </div>
+            <!--  -->
+            <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFivee">
+                <a class="card-title"> News </a>
+            </div>
+            <div id="collapseFivee" class="collapse card-body" data-parent="#accordion">
+              <ul aria-expanded="true" aria-label="news" role="menu">
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">all</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">release</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">media</font>
+                              </font>
+                            </a>
+                          </li>
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Notice</font>
+                              </font>
+                            </a>
+                          </li>
+                        </ul>
+            </div>
+
+<!--  -->
+<div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFiveee">
+                <a class="card-title"> Blog </a>
+            </div>
+            <div id="collapseFiveee" class="collapse card-body" data-parent="#accordion">
+              <ul aria-expanded="true" aria-label="news" role="menu">
+                          
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Our Blog</font>
+                              </font>
+                            </a>
+                          </li>
+                          
+                          
+                        </ul>
+            </div>
+<!--  -->
+<div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                <a class="card-title"> Contact Us </a>
+            </div>
+            <div id="collapseSix" class="collapse card-body" data-parent="#accordion">
+              <ul aria-expanded="true" aria-label="Contact Us" role="menu">
+                          <li role="none">
+                            <a role="menuitem" href="#" tabindex="0">
+                              <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Get in touch</font>
+                              </font>
+                            </a>
+                          </li>
+                        </ul>
+            </div>
+
+        </div>
+    </div>
+
+<div class="p-3">
+                      <ul>
+                        <li>
+                          <a href="#">Terms and Conditions</a>
+                        </li>
+                        <li>
+                          <a href="#">Privacy Policy</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="bar"></div>
+                    <div class="footer-appendix">
+                      <div class="footer-company">
+                        <div class="logo">
+                          <h2 style="color: #fff">I<span style="font-size: 30px">denbrid</span></h2>
+                         <!--  <img src="https://d1dlw0u96vqtxd.cloudfront.net/images/shared/wantedly-logo-white.svg" width="140"> -->
+                          </div>
+                          <div class="copyright">
+                            <font style="vertical-align: inherit;">
+                              <font style="vertical-align: inherit;">© 2020 Idenbrid, Inc.<font>
+                            </font>
+                          </div>
+                        </div>
+                        <ul class="sns-buttons">
+                          <li>
+                            <a target="_blank" href="#">
+                              <i class="fa fa-facebook-official"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a target="_blank" href="#">
+                              <i class="fa fa-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a target="_blank" href="#">
+                              <i class="fa fa-instagram"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+
+                  </footer>
+
+                  <script type="text/javascript">
+  $(document).ready(function(){
+    $("#barMenu").click(function(){
+      $("#barMenu").css("display", "none");
+      $("#closeMenu").css("display", "Inline-table");
+      $("body").css("overflow", "hidden");
+      $(".opcity2").css("opacity", ".2");
+    });
+  });
+  $(document).ready(function(){
+    $("#closeMenu").click(function(){
+      $("#closeMenu").css("display", "none");
+      $("#barMenu").css("display", "block");
+      $("body").css("overflow", "auto");
+      $(".opcity2").css("opacity", "1")
+    });
+  });
+</script>

@@ -1,0 +1,2 @@
+class ClientproductsController < ApplicationController
+end

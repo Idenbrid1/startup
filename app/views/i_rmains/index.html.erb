@@ -1,0 +1,346 @@
+<style type="text/css">
+    
+@media (max-width: 767px){
+  .svg{
+    display: none;
+  }
+  #header{
+    display: none;
+  }
+  #mnav{
+    display: block;
+  }
+  .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 78px;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  text-align: left;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: -78px;
+    right: 5px;
+    font-size: 40px;
+}
+.mobileTopImgLogo:hover{
+  background: transparent;
+}
+
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+
+  </style>
+
+
+<!-- <script type="text/javascript">
+  $(document).ready(function(){
+   $(".navbar-toggler").click(function(){
+     $('#startchange').css({"width": "80%", "margin-left": "20%"})
+   });
+   $(".collapsed").click(function(){
+     $('#startchange').css({"width": "100% !important", "margin-left": "0% !important"})
+   });
+  });
+</script> -->
+<div id="mnav">
+<div id="myNav" class="overlay">
+  <div class="overlay-content pl-3">
+    <a href="#">
+      <%= image_tag("idenbrid10.png", :alt => "Flexslider" , :class => "img-responsive", :id => "logo", :style => "width:100px;padding:10px;")%>
+    </a>
+    <a href="#">Coperate Website</a>
+    <a href="#">IR information</a>
+    <a href="#">Employment Information</a>
+    <a href="#">News</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Admin</a>
+  </div>
+</div>
+  <div class="fixed-top mb-5" style="background: #fff">
+    <a href="#" class="mobileTopImgLogo">
+                <%= image_tag("idenbrid10.png", :alt => "Flexslider" , :class => "img-responsive", :id => "logo", :style => "width:80px;padding:10px;")%>
+              </a>
+<span id="barMenu" style="font-size:30px;cursor:pointer;float: right;padding: 12px;" onclick="openNav()">&#9776;</span>
+<span id="closeMenu" class="overlay" style="display: none;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</span>
+  </div>
+</div>
+
+  <header id="header" class="fixed-top">
+    <div class="navbar-default">
+        <nav id="startchange" class="navbar mmm  navbar-expand-lg navbar-light" style="background: #fff;">
+          <div class="container pr-0">
+          <div class="pl-0">
+              <a href="#">
+                <%= image_tag("idenbrid10.png", :alt => "Flexslider" , :class => "img-responsive", :id => "logo")%>
+              </a>
+          </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          
+            <ul class="navbar-nav ml-auto">
+              <li class="active"><%= link_to "Coperate Website", home_path,id:"coperate" %></li>
+            <li><a href="#about">IR information</a></li>
+            <li><a href="#products">Product</a></li>
+            <li><a href="#team">Employment Information</a></li>
+            <li><a href="#services">news</a></li>
+            <li class="nav-item"><%= link_to "Contact", new_contact_path %></li>
+            <li class="nav-item"><%= link_to "Admin", admins_home_path %></li>
+            </ul>
+        </div>
+        </div>
+      </nav> 
+     </div>
+   </header>
+<!-- *******************Mobilr Navbar******** -->
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#barMenu").click(function(){
+      $("#barMenu").css("display", "none");
+      $("#closeMenu").css("display", "Inline-table");
+      $("body").css("overflow", "hidden");
+      $("#home").css("opacity", ".2");
+    });
+  });
+  $(document).ready(function(){
+    $("#closeMenu").click(function(){
+      $("#closeMenu").css("display", "none");
+      $("#barMenu").css("display", "block");
+      $("body").css("overflow", "auto");
+      $("#home").css("opacity", "1")
+    });
+  });
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "80%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<!-- ***************************End Mobile Navber -->
+  <!--==========================
+    Intro Section
+  ============================-->
+  <!-- <section id="intro" class="clearfix">
+    <div class="container">
+       
+      <div class="intro-img">
+        
+        <%= image_tag("intro-img.svg", :alt => "Flexslider" , :class => "img-fluid")%>
+      </div>
+
+      <div class="intro-info">
+        <h2>We provide<br><span>solutions</span><br>for your business!</h2>
+        <div>
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="#services" class="btn-services scrollto">Our News</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  #intro --> 
+<script type="text/javascript">
+  $(document).ready(function () {
+        var scroll_start = 0;
+        var startchange = $('#startchange');
+        var offset = startchange.offset();
+        $(document).scroll(function () {
+            scroll_start = $(this).scrollTop();
+            if (scroll_start > offset.top) {
+                $('.mmm').css('background-color', '#fff');
+            } else {
+                $('.mmm').css('background-color', '#fff');
+            }
+        });
+    });
+</script>
+
+<section id="sectionirnews" class="section-bg">
+  <div class="container">
+    <header class="section-header">
+      <h3> IR News</h3>
+      <p>IR News</p>
+    </header>
+    
+      <div class="row">
+        <div class="col-offset-lg-2 col-lg-3 col-md-4"></div>
+        <div class="col-lg-2 col-md-4 ">
+          <label>Year</label>
+          <div class="dropdwn">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              All
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <p class="title1"><%= %></p>
+              <a class="dropdown-item" href="#">All</a>
+              <a class="dropdown-item" href="#">2020</a>
+              <a class="dropdown-item" href="#">2019</a>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <label>Category</label>
+            <div class="dropdown">
+             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                
+                <%= link_to "Press release", pressses_path, class:'dropdown-item' %>
+                <%= link_to "Notice", notices_path, class:'dropdown-item' %>
+                <%= link_to "Publication", publications_path, class:'dropdown-item' %>
+              </div>
+            </div>
+         </div>
+     
+    </div>
+  </div>
+   <br>
+  <div class="container">  
+   
+    <div class="row">
+      <div class="col-lg-3 col-md-4 ">
+        <ul id ="irorderList">
+          <li><%= link_to "Share holders", pressses_path, class:'dropdown-item' %> </li>
+          <li><%= link_to "Performance", pressses_path, class:'dropdown-item' %></li>
+          <li> <%= link_to "IR news", pressses_path, class:'dropdown-item' %></li>
+          <li><%= link_to "FAQS", pressses_path, class:'dropdown-item' %></li>
+        </ul>
+      </div>
+      
+      <div class=" col-lg-8 col-md-6 wow bounceInUp">
+        <% @i_rmains.each do |i_rmain| %>
+          <div class="box" id="ir-box">
+            <h4 class="title"><%= i_rmain.ir_date %></h4>
+            <p class="title1"><%= i_rmain.title %></p>
+            <p class="description"><%= i_rmain.ir_file %></p>
+            <div>
+              <%= link_to 'Show', i_rmain %>
+              <% if current_user.admin %>
+              <%= link_to 'Edit', edit_i_rmain_path(i_rmain) %>
+              <%= link_to 'Destroy', i_rmain, method: :delete, data: { confirm: 'Are you sure?' } %>
+              <% end %>
+            </div>
+          </div>
+          <% end %>
+        </div>
+        
+      </div>
+        
+       pagination here
+  
+     <% if current_user.admin %>
+     <%= link_to 'New I Rmain', new_i_rmain_path %>
+     <% end %>
+  </div>
+</section>    
+
+<!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+           <h3>IDENBRID</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links" style="text-align: left;">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact" style="text-align: left;">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4 style="text-align: left;">Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+         <div class="copyright">
+           &copy; Copyright <strong>Idenbrid</strong>. All Rights Reserved
+        </div>
+      </div>
+
+    </div>
+
+   
+     
+    
+  </footer><!-- #footer -->

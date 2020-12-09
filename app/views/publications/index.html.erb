@@ -1,0 +1,158 @@
+
+<%= render partial: "/layouts/navbar_coperatesite" %>
+
+<p id="notice"><%= notice %></p>
+
+
+<!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container">
+
+      <div class="intro-img">
+        
+        <%= image_tag("intro-img.svg", :alt => "Flexslider" , :class => "img-fluid")%>
+      </div>
+
+      <div class="intro-info">
+        <h2>We provide<br><span>solutions</span><br>for your business!</h2>
+        <div>
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="#services" class="btn-services scrollto">Our Services</a>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+
+  <!--==========================
+      Team Section
+    ============================-->
+     <section id="team">
+      <div class="container">
+        <div class="section-header">
+          <h3>Employment Information</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              
+              <%= image_tag("team-1.jpg", :alt => "Flexslider" , :class => "img-fluid")%>
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <%= image_tag("team-2.jpg", :alt => "Flexslider" , :class => "img-fluid")%>
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <%= image_tag("team-3.jpg", :alt => "Flexslider" , :class => "img-fluid")%>
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <%= image_tag("team-4.jpg", :alt => "Flexslider" , :class => "img-fluid")%>
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> 
+    <!-- #team -->
+
+
+<section id="services" class="section-bg">
+  <div class="container">
+   <div class="row" id="newletterbox">
+     <% @publications.each do |publication| %>
+    
+    <div class="col-md-3 col-lg-3 offset-lg-1 wow bounceInUp" data-wow-duration=" 1.4s">
+      
+      <div class="box" >
+        <div class="title">
+          <h5> Media </h5>
+          <div>Title:</div>
+          <div>Publish date:</div>
+          <div>Body:</div>
+        </div>
+        
+          <h4 class="title"><%= publication.title %></h4>
+          <p class="title1"><%= publication.publication_date %></p>
+          <p class="description"><%= publication.body %></p>
+          <div>
+            <%= link_to 'Show', publication, class:"btn btn-info" %>
+            <%= link_to 'Edit', edit_publication_path(publication), class:"btn btn-success" %>
+            <%= link_to 'Destroy', publication,class:"btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+        
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <%= will_paginate @publications,id:'paginate' %>
+ </div>
+ <%= link_to 'Back', newzs_path,class:"btn btn-primary"  %>
+ <% if current_user.admin %>
+ <%= link_to 'Create publications', new_publication_path, class:'btn btn-primary' %>
+ <% end %>
+ 
+</section><!-- #services -->
+<%= render partial: "/layouts/footer" %>

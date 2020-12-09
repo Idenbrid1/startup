@@ -1,0 +1,247 @@
+<%= render partial: "/layouts/navbar_coperatesite" %>
+
+
+
+
+
+<!-- Facebook -->
+<!--  <a class="fb-ic" href="https://www.facebook.com/zindawork/" target="_blank"><i class="fa fa-facebook" style="font-family: normal normal normal 14px/1 FontAwesome"></i> </a> -->
+
+<!--Instagram-->
+<!--  <a class="ins-ic" href="https://www.instagram.com/zindawork/?utm_source=ig_embed" target="_blank"> <i class="fa fa-instagram"> </i> </a> -->
+          
+<style type="text/css">
+  *:focus{
+    outline: none;
+    }
+  
+  body{
+    
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  .entry-item {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 26px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: block;
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.07);
+    transition: all 300ms;
+    }
+  .category {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .category.press_release {
+    color: #943ce1;
+  }
+  .date {
+    font-size: 13px;
+    font-weight: normal;
+    color: rgba(0,0,0,.4);
+  }
+  .entry-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.71;
+    letter-spacing: .6px;
+    color: #45494b;
+    overflow: hidden;
+    display: -webkit-box;
+    height: 45px;
+    margin-top: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .entry-content {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.83;
+    margin-top: 15px;
+    height: 66px;
+    color: rgba(0,0,0,.6);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+  *:focus{
+              outline: none;
+            }
+
+            body{
+              overflow-x: hidden;
+              margin: 0;
+              font-family: 'Libre Franklin', sans-serif;
+              padding: 0;
+              box-sizing: border-box;
+            }
+            p{
+              font-size: 100%;
+              line-height: 2;
+              letter-spacing: 1.2px;
+              color: #9DA0A4 !important;
+            }
+            strong  {
+              color:#000 !important;
+            }
+            ul li {
+              font-size: 110%;
+    line-height: 1.45;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    z-index: 5;
+            }
+            .listUl a {
+             color: #9DA0A4 !important;
+              text-decoration: none;
+              background-color: transparent;
+          }
+            .listUl  a:hover {
+             color: #9DA0A4;
+              text-decoration: none;
+              background-color: transparent;
+          }  
+  .entry-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,.1);
+    text-decoration: none;
+  }
+  .category.medium {
+    color: #1ecc6f;
+  }
+  label{
+  
+  font-size: 100%;
+   }
+  a:hover {
+    color: #0056b3;
+    text-decoration: none;
+   }
+  option{
+  border-color: #0000000d;
+   }
+  .selrctNews{
+    border-color: #0000000d;
+    word-wrap: normal;
+    width: 340px;
+    font-size: 13px;
+    color: #00000099;
+    padding: 10px;
+
+  }
+  #paginate span, #paginate em, #paginate a{
+padding: 0 10px;
+  }
+  
+ #paginate{
+  justify-content:center; 
+  color:grey !important;
+}
+
+ @media(max-width: 600px){
+  .onmmt-5vh{
+    margin-top: 20vh !important;
+  }
+  .d-blockm{
+    display: block !important;
+    width: 100%;
+  }
+  .selrctNews {
+    width: 100%;
+}
+ }
+</style>
+
+<div class="col-md-9 mx-auto my-5 onmmt-5vh">
+  <div class="row m-0 ">
+    <div class="my-3 d-flex d-blockm">
+      <div>
+        <label>Year</label> <br>
+      <select class="selrctNews mr-3">
+        <option>all</option>
+        <option>2020</option>
+        <option>2019</option>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+      </select>
+      </div>
+
+       <div>
+        <label>Category</label> <br>
+      <select class="selrctNews mr-3">
+        <option>all</option>
+        <option>Press release</option>
+        <option>Notice</option>
+        <option>Publication</option>
+      </select>
+      </div>
+    </div>
+  </div>
+  <div class="row ">
+    <% @newzs.each do |newz| %>
+      <div class="col-md-4">
+        <a target="_blank" class="entry-item" href="<%= show_newzs_path(newz.id) %>"><div class="entry-header">
+      <div class="category press_release"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+       <%= newz.name %>
+      </font></font></div>
+      <div class="date"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><%= newz.publish_date %></font></font></div>
+      </div>
+      <div class="entry-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><%= newz.title %></font></font></div>
+      <div class="entry-content"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><%= newz.body.first(80) %></font></font></div>
+      </a>
+      </div>
+    <% end %>
+    
+  </div>
+ 
+ <%= will_paginate @newzs,id:'paginate' %>
+
+</div>
+
+  <%= render partial: "/layouts/footer" %>
+
+
+
+
+<script type="text/javascript">
+  $('.newz_id').click(function(){
+var pub_id = $(this).data('id');
+debugger
+$.ajax({
+type: 'POST',
+url:'/get_newzs',
+data: {newz: {pub_id: newz_id}},
+success: function(data){
+}
+});
+});
+
+
+</script>  
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#barMenu").click(function(){
+      $("#barMenu").css("display", "none");
+      $("#closeMenu").css("display", "Inline-table");
+      $("body").css("overflow", "hidden");
+      $(".onmmt-5vh, .footer").css("opacity", ".2");
+    });
+  });
+  $(document).ready(function(){
+    $("#closeMenu").click(function(){
+      $("#closeMenu").css("display", "none");
+      $("#barMenu").css("display", "block");
+      $("body").css("overflow", "auto");
+      $(".onmmt-5vh, .footer").css("opacity", "1")
+    });
+  });
+</script>

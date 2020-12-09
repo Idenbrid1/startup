@@ -1,0 +1,274 @@
+<%= render partial: "/layouts/navbar_coperatesite" %>
+<style type="text/css">
+  svg{
+    display: none;
+  }
+  .carousel-item img{
+    height: 550px;
+  }
+  @media(max-width: 600px){
+    .carousel-item img {
+    height: auto !important;
+}
+  }
+  ul li {
+              font-size: 110%;
+    line-height: 1.45;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    z-index: 5;
+            }
+            .sns-buttons li{
+              margin-bottom: 0 !important;
+            }
+  @media(min-width: 1450px){
+  #create{
+  margin-top: -200px !important;
+}
+}
+</style>
+  <section id="home" class="parallax-section col-md-9 mx-auto  pb-5 ">
+      <div class="gradient-overlay mt0 mt-5 ">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+             <%= image_tag("topSlider/sliderr1.jpg", :alt => "First slide" , :class => "d-block w-100")%>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag("topSlider/slider3.png", :alt => "First slide" , :class => "d-block w-100")%>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag("topSlider/slider2.jpg", :alt => "First slide" , :class => "d-block w-100")%>
+          </div>
+        </div>
+       </div>
+      </div>
+        <div class="">
+          <div class="row" id="create">
+              <div class="col-md-offset-2 col-md-10 col-sm-12">
+                  <h1 class="wow fadeInUp" data-wow-delay="0.6s">It will be <br> an irreplaceable <br>existence.</h1>
+              </div>
+              <div class="col-md-offset-2 col-md-4 col-sm-8">
+                  <p class="wow mt-4 fadeInUp subTiteleHeading" data-wow-delay="1.0s">"Creating services that benefit the people of the world" Idenbrid provides businesses to increase people's commonalities and deepen exchanges through the services they have developed."</p>
+               </div>
+               <div class="svg">
+                <svg height="400" width="1200" id="affects">
+                 <line x1="200" y1="600" x2="450" y2="50" style="stroke:rgb(115, 217, 210);stroke-width:3.5" id="lineaffects"></line>
+                </svg>
+              </div>
+             </div>
+            </div>
+    </section>
+  <main id="main">
+    <!-- #product -->
+    <section id="products" class="section-bg pb-0" >
+      <div class="col-md-9 mx-auto">
+        <header class="section-header mb-5">
+          <h3 class="text-uppercase text-center">Services</h3>
+          <p>サービス</p>
+        </header>
+        <div class="row">
+          <div class="col-md-8 col-lg-8  wow bounceInUp" data-wow-duration="1.4s">
+              <div class="box">
+                <%= image_tag("topSlider/comingsoon1.jpg", :alt => "Flexslider" , :class => "imgComingsoon")%>
+                <!-- 
+                 <img srcset="https://d1dlw0u96vqtxd.cloudfront.net/images/home/top_visit_product_pc.png" alt="img" style="width: 100%;"> -->
+                 <div class="text-center">
+                   <%= link_to "View More", products_path,class:"btn",id:"productbtn" %>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+    </section><!-- #product -->
+    <!-- #product 2 -->
+    <section id="products" class="section-bg" style="padding-top: 0px;">
+      <div class="col-md-9 mx-auto">
+        <div class="row">
+          <div class="col-md-8 col-lg-8 ml-auto wow bounceInUp" data-wow-duration="1.4s" id="box1">
+          <div class="box">
+             <%= image_tag("topSlider/comingsoon2.jpg", :alt => "Flexslider" , :class => "imgComingsoon")%> 
+           <!-- <img srcset="https://d1dlw0u96vqtxd.cloudfront.net/images/home/top_visit_product_pc.png" alt="img" style="width: 100%;"> -->
+             <div class="text-center">
+              <%= link_to "View More", clientproducts_path,class:"btn",id:"productbtn" %>
+            </div> 
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services" class="section-bg">
+      <div class="container">
+        <header class="section-header mb-5">
+          <h3 class="text-uppercase text-center">NEWS</h3>
+          <p>ニュース</p>
+        </header>
+        <div class="row">
+          <div class=" col-lg-4 my-2 wow bounceInUp" data-wow-duration="1.4s">
+            <a href="<%=newzs_path %>">
+            <div class="box m-0" style="box-shadow: 0 2px 5px 0 #838a9c3d;border-radius:0;">
+              <h4 class="title">Press release</h4>
+              <p class="title1">sep 4,2020</p>
+               <p class="description mb-4" style="color: #000;font-weight: 600;">Comments on HR 5 years later were posted on HRog</p>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati atque consequat tarad </p>
+            </div>
+            </a>
+          </div>
+          <div class="col-lg-4 my-2 wow bounceInUp" data-wow-duration="1.4s" >
+           <a href="<%=newzs_path %>">
+            <div class="box m-0" style="box-shadow: 0 2px 5px 0 #838a9c3d;border-radius:0;">
+              <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #E9BF06;"></i></div>
+              <h4 class="title">Press release</h4>
+              <p class="title1">sep 4,2020</p>
+              <p class="description mb-4" style="color: #000;font-weight: 600;">Comments on HR 5 years later were posted on HRog</p>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+           </a>
+          </div>
+          <div class="col-lg-4 my-2  wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <a href="<%=newzs_path %>">
+            <div class="box m-0" style="box-shadow: 0 2px 5px 0 #838a9c3d;border-radius:0;">
+              <div class="icon"><i class="ion-ios-paper-outline" style="color: #3FCDC7;"></i></div>
+              <h4 class="title">Media</h4>
+              <p class="title1">sep 4,2020</p>
+               <p class="description mb-4" style="color: #000;font-weight: 600;">Comments on HR 5 years later were posted on HRog</p>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+           </a>
+          </div>
+        </div>
+     <!--  <div class="news">
+        <%= link_to "ALL News", newzs_path,class:"btn btn-primary",id:"news" %>
+      </div> -->
+       <div class="news ">
+         <% if user_signed_in? && current_user.admin? %>
+         <%= link_to "View more", newzs_path,class:"btn btn-primary text-capitalize",id:"news" %>
+         <% else %>
+         <%= link_to "View more", get_newzs_path,class:"btn btn-primary text-capitalize",id:"news"%>
+         <% end %>
+       </div>
+      </div>
+    </section>
+    <!-- #services -->
+     <!--==========================
+      IR news section
+    ============================-->
+   <!-- <section id="sectionirnews" class="section-bg">
+    <div class="container">
+        <header class="section-header">
+          <h3> IR News</h3>
+          <p>IR News</p>
+        </header>
+        <div class="row">
+          <div class=" col-lg-10 col-md-11 offset-lg-1  wow bounceInUp" data-wow-duration="1.4s">
+             <a href="<%=newzs_path %>">
+            <div class="box mb-3" style="box-shadow: 0 2px 5px 0 #838a9c3d;border-radius: 0;">
+              <div class="row" id="irbottom">
+                <div class="col-md-2 col-sm-2">
+                 <p class="title1">sep 4,2020</p>
+                </div>
+                <div class="col-md-2">
+                 <h4 id="irnews">Fincial results</h4>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                  <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati atque consequat tarad </p>
+                </div>
+              </div>
+            </div>
+          </a>
+            <div class="box mb-3" style="box-shadow: 0 2px 5px 0 #838a9c3d;border-radius: 0;">
+              <div class="row" id="irbottom">
+                <div class="col-md-2">
+                 <p class="title1">sep 4,2020</p>
+                </div>
+                <div class="col-md-2">
+                 <h4 id="irnews">Fincial results</h4>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                  <p class="description">Voluptatum deleniti atque  excepturi sint occaecati atque consequat tarad </p>
+                </div>
+              </div>
+            </div>
+            <div class="box mb-3" style="box-shadow: 0 2px 5px 0 #838a9c3d;border-radius: 0;">
+              <div class="row" id="irbottom">
+                <div class="col-md-2">
+                 <p class="title1">sep 4,2020</p>
+                </div>
+                <div class="col-md-2">
+                 <h4 id="irnews">Fincial results</h4>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                  <p class="description">Voluptatum deleniti atque corrupti quos dolores</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="news"><%= link_to "ALL IR News", i_rmains_path,class:"btn btn-primary",id:"news" %></div>
+    </div>
+   </section> -->
+   <style type="text/css">
+     .hrmap{
+      margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 5px solid #4c4c4c;
+    width: 20%;
+     }
+   </style>
+    <section id="map-section">
+      <div class="col-md-9 mx-auto">
+        <div class="row wow fadeInUp sikandar" id="map-items">
+        <div class="col-lg-3 mb-5 pb-5 " id="map-content" style="letter-spacing: 2px;">
+          <h5 class="text-capitalize">Idenbrid Inc. Office</h5> 
+          <hr class="hrmap">
+          <h1>Lahore</h1> <br>
+          <b> 128 CCA DD Block </b> <br>
+          <b>Phase 4 DHA Lahore, Pakistan</b> <br> 
+          <p class="mt-4" style="line-height: 1.54;">10 minutes walk from Gold Crest Mall, 2 minutes walk from Allied Bank DHA CCA Phase 4 branch</p>
+          <a href="#" class=" sss" style="position: absolute;bottom:10px;">Google Map</a>
+        </div>
+          <div class="col-lg-9 mt-5 p0 mb-5">
+            <div class="map mb-4 mb-lg-0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6806.492243155524!2d74.38522929999998!3d31.46241510000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1607324559401!5m2!1sen!2s" frameborder="0" style="border:0;width: 100%;height: 700px;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+   <%= render partial: "/layouts/footer" %>
+
+   <style type="text/css">
+     .sss{
+      display: block;
+    width: 220px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 100px;
+    background: #000000b3;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.1);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: all 300ms;
+     }
+     .sss:hover{
+      color: #fff;
+    text-decoration: none;
+    background-image: linear-gradient(100deg, #1e7dde, #00c4c4);
+    box-shadow: 0 9px 10px 0 rgba(0,0,0,.1);
+    transform: translateY(-3px);
+     }
+   </style>

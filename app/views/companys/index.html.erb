@@ -1,0 +1,112 @@
+<%= render partial: "/layouts/navbar_coperatesite" %>
+
+
+         <style type="text/css">
+            *:focus{
+              outline: none;
+            }
+
+            body{
+              overflow-x: hidden;
+              margin: 0;
+              font-family: 'Libre Franklin', sans-serif;
+              padding: 0;
+              box-sizing: border-box;
+            }
+            p{
+              font-size: 100%;
+              line-height: 2;
+              letter-spacing: 1.2px;
+              color: #000;
+            }
+            strong  {
+              color:#000 !important;
+            }
+            ul li {
+              font-size: 110%;
+    line-height: 1.45;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    z-index: 5;
+            }
+            .sns-buttons li{
+              margin-bottom: 0 !important;
+            }
+            .listUl a {
+             color: #9DA0A4 !important;
+              text-decoration: none;
+              background-color: transparent;
+          }
+            .listUl  a:hover {
+             color: #9DA0A4;
+              text-decoration: none;
+              background-color: transparent;
+          }               
+@media(max-width: 600px){
+  .mplr-15{
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  .d-flex > span{
+    flex:5 !important;
+  }
+  .mmt-3rem{
+    margin-top: 3rem !important;
+  }
+}
+        </style>
+
+<div class="col-md-9 mx-auto opcity2">
+                 <div>
+                  <div class="text-center my-5">
+                   <h3 class="text-uppercase pt-5">Company profile</h3>
+                   <p class="pb-5 text-center" style="color: #9e9e9e">企業概要</p>
+                  </div>
+                   <div class="row mb-5 pb-5">
+                     <div class="col-md-3 listUl mplr-15">
+                       <ul class="pl-0" style="list-style: none;text-align: left;text-transform: capitalize;">
+                         <li><a href="<%= coperates_path %>">Motto</a></li>
+                         <li><a href="<%= historys_path %>">Timeline</a></li>
+                         <li><a href="<%= companys_path %>"><strong>Company profile</strong></a></li>
+                         <li><a href="<%= officers_path %>">Members</a></li>
+                       </ul>
+                     </div>
+                     <div class="col-md-9">
+                       <div class="row mmt-3rem">
+                         <div class="col-md-9 mr-auto">
+                           <div class="text-left dateDAta">
+                         <p class="d-flex"><span style="flex: 3;text-align: right;color: #9DA0A4;">Company Name
+                         </span>&nbsp;&nbsp;&nbsp;&nbsp; <span style="flex: 12;margin-left: 30px">Idenbrid Inc.</span></p>
+                         
+                         <p class="d-flex"><span style="flex: 3;text-align: right;color: #9DA0A4; ">Chairperson</span>&nbsp;&nbsp;&nbsp;&nbsp; <span style="flex: 12;margin-left: 30px">F. Saleem</span></p>
+                         
+                         <p class="d-flex"><span style="flex: 3;text-align: right;color: #9DA0A4;">CEO</span>&nbsp;&nbsp;&nbsp;&nbsp; <span style="flex: 12;margin-left: 30px">Souga Nakamura</span> </p>
+                         
+                         <p class="d-flex"><span style="flex: 3;text-align: right;color: #9DA0A4;">Phone number
+                           </span>&nbsp;&nbsp;&nbsp;&nbsp; <span style="flex: 12;margin-left: 30px">0306-404-1221</span></p>
+                          
+                         <p class="d-flex"><span style="flex: 3;text-align: right;color: #9DA0A4;">Established
+                          </span>&nbsp;&nbsp;&nbsp;&nbsp; <span style="flex: 12;margin-left: 30px">January 2020</span> </p>
+                          
+                         <p class="d-flex"><span style="flex: 3;text-align: right;color: #9DA0A4;">Business </span>&nbsp;&nbsp;&nbsp;&nbsp; <span style="flex: 12;margin-left: 30px">Planning, development and operation of Zindawork & bizblanca</span> </p>
+                         
+                         <p class="d-flex"><span style="flex: 3;text-align: right;color: #9DA0A4;white-space: nowrap;">Business Alliance
+                          </span>&nbsp;&nbsp;&nbsp;&nbsp; <span style="flex: 12;margin-left: 30px">Part of the Zanzibar Pvt. Ltd. Group</span> </p>
+                        
+                       </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              </div>
+
+
+
+   <!--==========================
+    Footer
+  ============================-->
+  <<%= render partial: "/layouts/footer" %>
+
+  <!-- #footer -->

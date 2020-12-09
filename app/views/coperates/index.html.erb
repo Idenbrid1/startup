@@ -1,0 +1,115 @@
+<!--==========================
+  Header
+  ============================-->
+  
+<%= render partial: "/layouts/navbar_coperatesite" %>
+
+
+         <style type="text/css">
+            *:focus{
+              outline: none;
+            }
+body, p, ol, ul, td{
+  font-family: 'Libre Franklin', sans-serif;
+}
+            body{
+              overflow-x: hidden;
+              margin: 0;
+              font-family: 'Libre Franklin', sans-serif;
+              padding: 0;
+              box-sizing: border-box;
+            }
+            p{
+              font-size: 100%;
+              line-height: 2;
+              letter-spacing: 1.2px;
+              color: #9DA0A4 !important;
+            }
+            strong  {
+              color:#000 !important;
+            }
+            ul li {
+              font-size: 110%;
+    line-height: 1.45;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    z-index: 5;
+            }
+            .sns-buttons li{
+              margin-bottom: 0 !important;
+            }
+            .listUl a {
+             color: #9DA0A4 !important;
+              text-decoration: none;
+              background-color: transparent;
+          }
+            .listUl  a:hover {
+             color: #9DA0A4;
+              text-decoration: none;
+              background-color: transparent;
+          }               
+@media(max-width: 600pc){
+  .mplr-15{
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
+        </style>
+      
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#barMenu").click(function(){
+      $("#barMenu").css("display", "none");
+      $("#closeMenu").css("display", "Inline-table");
+      $("body").css("overflow", "hidden");
+      $(".opcity2").css("opacity", ".2");
+    });
+  });
+  $(document).ready(function(){
+    $("#closeMenu").click(function(){
+      $("#closeMenu").css("display", "none");
+      $("#barMenu").css("display", "block");
+      $("body").css("overflow", "auto");
+      $(".opcity2").css("opacity", "1")
+    });
+  });
+</script>
+      <div class="col-md-9 mx-auto opcity2">
+                 <div>
+                  <div class="text-center my-5 ">
+                   <h3 class="text-uppercase pt-5">Motto</h3>
+                   <p class="pb-5 text-center" style="color: #9e9e9e">モットー</p>
+                  </div>
+                   <div class="row mb-5 pb-5">
+                     <div class="col-md-2 listUl p-0 mplr-15">
+                       <ul class="pl-0" style="list-style: none;text-align: left;text-transform: capitalize;">
+                         <li><a href="<%= coperates_path %>"><strong>Motto</strong></a></li>
+                         <li><a href="<%= historys_path %>">Timeline</a></li>
+                         <li><a href="<%= companys_path %>">Company Profile</a></li>
+                         <li><a href="<%= officers_path %>">Members</a></li>
+                       </ul>
+                     </div>
+                     <div class="col-md-5">
+                       <div class="text-left">
+                         <h3 class="my-5" style="font-weight: 600">“It will be an irreplaceable existence.”</h3>
+                         <p class="my-4">Idenbrid supports Pakistan's DX, which is experiencing rapid economic growth in proportion to the population growth of the country. Idenbrid provides services that serve as infrastructure for daily users. In Pakistan, where the manual option is still often used every day, we are creating a system to connect people, business and the world more conveniently. Furthermore, in Pakistan, the information available on the internet is still scarce, and we intend to make it so that fresh and accurate information can be delivered to users who wish to access it at any time. In the near future, we aim to go beyond Pakistan- to a cross-border mission with the goal of connecting talented business people and engineers who can take on the challenges we face in our ever-changing future.</p>
+                       </div>
+                     </div>
+                     <div class="col-md-5">
+                       <div class="row">
+                         <div class="col-md-12 ml-auto">
+                            <img style="width: 100%;" class="img-fluid" src="/assets/motto1.jpg">
+                            <!-- <img style="position: absolute;left: -9%;top: 40%;width: 40%;" src="https://d1dlw0u96vqtxd.cloudfront.net/images/shared/line-left.svg"> -->
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+              </div>
+
+  <!--==========================
+    Footer
+  ============================-->
+ <%= render partial: "/layouts/footer" %>
+    

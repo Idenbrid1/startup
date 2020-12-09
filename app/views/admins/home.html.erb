@@ -1,0 +1,33 @@
+<%= render partial: "/layouts/navbar_coperatesite" %>
+
+
+  <section id="admin" class="section-bg">
+	  <div class="container">
+	    <header class="section-header">
+	          <h1 style="color:white !important; font-weight:700;font-size:38px;">Admin Dashboard</h1>
+	          
+	    </header>
+  	   <div class="row">
+    	    <div class="col-md-2 col-lg-2 offset-lg-1 wow bounceInUp" data-wow-duration=" 1.4s">
+    	      <div class="box" >
+    	        <% if current_user  %>
+    	        <%= link_to 'Sign out' , destroy_user_session_path , method: :delete %>
+    	        <% else %>
+              <br>
+      				<%= link_to 'Sign up' , new_user_registration_path %><br>
+      				<%= link_to 'Sign in' , new_user_session_path %><br>
+      				<%= link_to "News", newzs_path %><br>
+      				<%= link_to "News press release", pressses_path %><br>
+      				<%= link_to "Notices", notices_path %><br>
+      				<%= link_to "publication", publications_path %><br>
+    	        <% end %>
+    	      </div>
+    	    </div>
+        </div>
+      </div>
+ </section>
+  <!--==========================
+    Footer
+  ============================-->
+    <%= render partial: "/layouts/footer" %>
+  <!-- #footer -->

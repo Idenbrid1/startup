@@ -1,0 +1,32 @@
+<%= form_with(model: i_rmain, local: true) do |form| %>
+  <% if i_rmain.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(i_rmain.errors.count, "error") %> prohibited this i_rmain from being saved:</h2>
+
+      <ul>
+        <% i_rmain.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ir_date %>
+    <%= form.date_select :ir_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ir_file %>
+    <%= form.text_area :ir_file %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
