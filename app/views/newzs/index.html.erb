@@ -82,6 +82,7 @@
              <%= link_to 'Edit', edit_newz_path(newz), class:"btn btn-success" %>
              
              <%= link_to 'Destroy', newz,class:"btn btn-warning", method: :delete, data: { confirm: 'Are you sure?'} %>
+             <%= link_to 'Create News', new_newz_path, class:'btn btn-primary' %>
              
             <% end %>
           </div>
@@ -92,8 +93,7 @@
   </div>
   <%= will_paginate @newzs,id:'paginate' %>
 
- <!-- 
- <%= link_to 'Create News', new_newz_path, class:'btn btn-primary' %> -->
+ 
  
 </section><!-- #services -->
 
