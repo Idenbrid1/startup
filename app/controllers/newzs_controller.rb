@@ -4,7 +4,7 @@ class NewzsController < ApplicationController
   
 
   def get_newzs
-    @newzs = Newz.paginate(:page => params[:page], per_page: 3)
+    @newzs = Newz.paginate(:page => params[:page], per_page: 6)
   end  
 
   def show_newzs
@@ -14,7 +14,7 @@ class NewzsController < ApplicationController
   # GET /newzs
   # GET /newzs.json
   def index
-    @newzs = Newz.paginate(:page => params[:page], per_page: 3)
+    @newzs = Newz.paginate(:page => params[:page], per_page: 6)
   end
 
   # GET /newzs/1

@@ -74,15 +74,13 @@
           <p class="description"><%= newz.body.first(80) %></p>
           <div>
 
-            <% if not current_user %>
-            <%= link_to 'Show', newz, class:"btn btn-info" %>
-            <% end %>
+           
             <%= link_to 'Show', newz, class:"btn btn-info" %>
             <% if current_user.admin %>
              <%= link_to 'Edit', edit_newz_path(newz), class:"btn btn-success" %>
              
              <%= link_to 'Destroy', newz,class:"btn btn-warning", method: :delete, data: { confirm: 'Are you sure?'} %>
-             <%= link_to 'Create News', new_newz_path, class:'btn btn-primary' %>
+             
              
             <% end %>
           </div>
@@ -94,7 +92,8 @@
   <%= will_paginate @newzs,id:'paginate' %>
 
  
- 
+ <%= link_to 'Create News', new_newz_path, class:'btn btn-primary' %>
 </section><!-- #services -->
-
+<% if current_user.admin %>
   <%= render partial: "/layouts/footer" %>
+<%end%>  

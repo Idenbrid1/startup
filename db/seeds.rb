@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+# Newz.each do |f|
+#   Newz.create(name:f,title: f,publish_date:f, body:f)
+  
+#   end
+
+
