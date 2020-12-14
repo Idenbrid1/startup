@@ -81,13 +81,13 @@ body{
       <a href="<%= products_path %>">Services</a>
       <a href="<%= clientproducts_path %>">Portfolio</a>
       <a href="<%= media_path %>">Recruitment</a>
-      <a>
+      
         <% if user_signed_in? && current_user.admin? %>
          <%= link_to "News", newzs_path%>
          <% else %>
          <%= link_to "News", get_newzs_path%>
          <% end %>
-      </a>
+      
       <a href="#">Blog</a>
       <a href="<%= new_contact_path %>">Contact Us</a>
     
