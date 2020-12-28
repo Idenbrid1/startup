@@ -73,3 +73,4 @@ gem 'prawn'
 gem 'rspec-rails'
 gem 'rack', '~> 2.0.1'
 gem 'uglifier'
+gem "nio4r", "= 2.5.2"
