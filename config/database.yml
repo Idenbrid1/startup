@@ -116,9 +116,9 @@ test:
 
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: startup_production
-  pool: 5
-  username: postgres
-  password: alpha12345
+  <<: *default
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  PORT: <%= ENV['RDS_PORT'] %>
