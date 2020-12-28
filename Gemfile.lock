@@ -254,6 +254,7 @@ DEPENDENCIES
   jquery-ui-rails
   local_time
   mail_form
+  nokogiri
   pg (>= 0.18, < 2.0)
   prawn
   puma (~> 4.1)
