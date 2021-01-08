@@ -13,8 +13,8 @@ development:
   database: startup_development
   pool: 5
 
-  username: postgres
-  password: alpha12345
+  username: site
+  password: alpha123
 
 
 test:
@@ -23,14 +23,14 @@ test:
   host: localhost
   database: startup_test
   pool: 5
-  username: postgres
-  password: alpha12345
+  username: site
+  password: alpha123
 
 
 production:
-  <<: *default
-  database: <%= ENV['RDS_DB_NAME'] %>
-  username: <%= ENV['RDS_USERNAME'] %>
-  password: <%= ENV['RDS_PASSWORD'] %>
-  host: <%= ENV['RDS_HOSTNAME'] %>
-  PORT: <%= ENV['RDS_PORT'] %>
+  adapter: postgresql
+  encoding: unicode
+  database: startup_production
+  pool: 5
+  username: site
+  password: alpha123
