@@ -1,0 +1,2 @@
+class PolicysController < ApplicationController
+end

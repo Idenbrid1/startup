@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   resources :recruits
   resources :environments
   resources :footer
+  resources :terms
+  resources :policys
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   root "welcome#index", as: 'home'
