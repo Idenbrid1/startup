@@ -155,6 +155,95 @@ ul, li {
     }
   }
   </style>
+  <style type="text/css">
+  
+@media(max-width: 991px){
+  .footer {
+    height: 100vh;
+  }
+  .footer-inner{
+      display: none !important;
+    }  
+ 
+  .siku{
+  display: block;
+}
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+        color: #fff;
+}
+.accordion .card-header.collapsed:after {
+    content: "\f067"; 
+}
+  .site-map-sub li {
+     margin-right: 0px; 
+    line-height: 1.6;
+    flex-shrink: 0;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 22px;
+}
+.footer-appendix{
+  display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px; 
+}
+.logo{
+  line-height: 35px;
+}
+.sns-buttons{
+  display: flex;
+    width: 40%
+}
+.footer{
+  padding: 0;
+}
+.footer a{
+  padding: 0 12px !important; 
+}
+.copyright{
+  font-size: 11px;
+    color: #fff;
+    display: none;
+    float: right;
+}
+.footer-appendix{
+  position: absolute;
+    bottom: 25px;
+}
+.accordion {
+    padding-top: 3rem !important;
+    overflow-anchor: none;
+}
+.card-header{
+    border-top: 1px solid #fff4f480;
+  border-bottom: 1px solid #fff4f480;
+}
+.card{
+  border-bottom: 1px solid #fff4f480;
+  border-top: 1px solid #fff4f480;
+}
+.site-map-sub {
+    font-size: 12px;
+    opacity: .8;
+    margin-top: 15px !important;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    font-size: 15px;
+    color: #fff;
+    opacity: .8;
+}
+}
+</style>
 
    <footer class="footer">
                   <div class="footer-inner col-md-9 mx-auto">
@@ -316,7 +405,7 @@ ul, li {
                         </div>
                         <ul aria-expanded="true" aria-label="Employment information" role="menu" style="height: 186.667px;">
                           <li role="none">
-                            <a role="menuitem" href="<%= clientproducts_path %>" tabindex="0">
+                            <a role="menuitem" href="http://idenbrid.com/blog" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Our Blog</font>
                               </font>
@@ -371,7 +460,7 @@ ul, li {
                         </div>
                         
                       </section>
-                      <section class="is-expanded" style="visibility: hidden;">
+                       <section class="is-expanded" style="visibility: hidden;">
                         <div class="section-title" role="button" tabindex="">
                           <ul>
                             <li>
@@ -403,7 +492,7 @@ ul, li {
                           <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
                         </div>
                         
-                      </section>
+                      </section> 
                     </div>
                     <div class="bar"></div>
                     <div class="footer-appendix">
@@ -439,97 +528,9 @@ ul, li {
                       </div>
                     </div>
 
-<style type="text/css">
-  
-@media(max-width: 991px){
-  .footer {
-    height: 100vh;
-  }
-  .footer-inner{
-      display: none !important;
-    }  
- 
-  .siku{
-  display: block;
-}
-.accordion .card-header:after {
-    font-family: 'FontAwesome';  
-    content: "\f068";
-    float: right; 
-        color: #fff;
-}
-.accordion .card-header.collapsed:after {
-    content: "\f067"; 
-}
-  .site-map-sub li {
-     margin-right: 0px; 
-    line-height: 1.6;
-    flex-shrink: 0;
-    display: block;
-    width: 100%;
-    font-size: 14px;
-    padding: 0 22px;
-}
-.footer-appendix{
-  display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding:10px; 
-}
-.logo{
-  line-height: 35px;
-}
-.sns-buttons{
-  display: flex;
-    width: 40%
-}
-.footer{
-  padding: 0;
-}
-.footer a{
-  padding: 0 12px !important; 
-}
-.copyright{
-  font-size: 11px;
-    color: #fff;
-    display: none;
-    float: right;
-}
-.footer-appendix{
-  position: absolute;
-    bottom: 25px;
-}
-.accordion {
-    padding-top: 3rem !important;
-    overflow-anchor: none;
-}
-.card-header{
-    border-top: 1px solid #fff4f480;
-  border-bottom: 1px solid #fff4f480;
-}
-.card{
-  border-bottom: 1px solid #fff4f480;
-  border-top: 1px solid #fff4f480;
-}
-.site-map-sub {
-    font-size: 12px;
-    opacity: .8;
-    margin-top: 15px !important;
-}
-.card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 1.25rem;
-    font-size: 15px;
-    color: #fff;
-    opacity: .8;
-}
-}
-</style>
 
-                      <div class="container p-0 siku opcity2" >
+
+  <div class="container p-0 siku opcity2" >
     <div id="accordion" class="accordion">
         <div class=" mb-0" style="background: transparent;">
             <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne" style="background: transparent;">
@@ -538,28 +539,28 @@ ul, li {
             <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
                 <ul aria-expanded="true" aria-label="Corporate information" role="menu">
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= coperates_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Motto</font>
                               </font>
                             </a>
                           </li>
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= historys_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Timeline</font>
                               </font>
                             </a>
                           </li>
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= companys_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Company Profile</font>
                               </font>
                             </a>
                           </li>
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= officers_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Members</font>
                               </font>
@@ -573,14 +574,14 @@ ul, li {
             <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
                 <ul aria-expanded="true" aria-label="product" role="menu">
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= products_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Zindawork</font>
                               </font>
                             </a>
                           </li>
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= products_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">bizblanca</font>
                               </font>
@@ -594,7 +595,7 @@ ul, li {
             <div id="collapseThree" class="collapse card-body" data-parent="#accordion">
                <ul aria-expanded="true" aria-label="IR information" role="menu" >
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%=clientproducts_path%>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Our Client Works</font>
                               </font>
@@ -609,7 +610,7 @@ ul, li {
             <div id="collapseFour" class="collapse card-body" data-parent="#accordion">
                <ul aria-expanded="true" aria-label="Employment information" role="menu">
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= media_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
 
                                 <font style="vertical-align: inherit;">Our Challenge</font>
@@ -617,14 +618,14 @@ ul, li {
                             </a>
                           </li>
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= environments_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Idenbrid HQ</font>
                               </font>
                             </a>
                           </li>
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= recruits_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Apply For Us</font>
                               </font>
@@ -640,28 +641,28 @@ ul, li {
             <div id="collapseFivee" class="collapse card-body" data-parent="#accordion">
               <ul aria-expanded="true" aria-label="news" role="menu">
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= get_newzs_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">all</font>
                               </font>
                             </a>
                           </li>
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= get_newzs_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">release</font>
                               </font>
                             </a>
                           </li>
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= get_newzs_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">media</font>
                               </font>
                             </a>
                           </li>
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= get_newzs_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Notice</font>
                               </font>
@@ -678,7 +679,7 @@ ul, li {
               <ul aria-expanded="true" aria-label="news" role="menu">
                           
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="http://idenbrid.com/blog" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Our Blog</font>
                               </font>
@@ -695,7 +696,7 @@ ul, li {
             <div id="collapseSix" class="collapse card-body" data-parent="#accordion">
               <ul aria-expanded="true" aria-label="Contact Us" role="menu">
                           <li role="none">
-                            <a role="menuitem" href="#" tabindex="0">
+                            <a role="menuitem" href="<%= new_contact_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">Get in touch</font>
                               </font>
@@ -710,10 +711,10 @@ ul, li {
 <div class="p-3">
                       <ul>
                         <li>
-                          <a href="#">Terms and Conditions</a>
+                          <a href="<%= terms_path %>">Terms and Conditions</a>
                         </li>
                         <li>
-                          <a href="#">Privacy Policy</a>
+                          <a href="<%= policys_path %>">Privacy Policy</a>
                         </li>
                       </ul>
                     </div>
@@ -732,7 +733,7 @@ ul, li {
                         </div>
                         <ul class="sns-buttons">
                           <li>
-                            <a target="_blank" href="#">
+                            <a target="_blank" href="https://www.facebook.com/zindawork/">
                               <i class="fa fa-facebook-official"></i>
                             </a>
                           </li>
@@ -742,7 +743,7 @@ ul, li {
                             </a>
                           </li>
                           <li>
-                            <a target="_blank" href="#">
+                            <a target="_blank" href="https://www.instagram.com/zindawork/?utm_source=ig_embed">
                               <i class="fa fa-instagram"></i>
                             </a>
                           </li>
