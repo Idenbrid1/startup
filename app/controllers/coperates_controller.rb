@@ -1,2 +1,4 @@
 class CoperatesController < ApplicationController
+
+	
 end
