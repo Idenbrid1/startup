@@ -79,6 +79,6 @@ class NewzsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def newz_params
-      params.require(:newz).permit(:name, :title, :publish_date, :body)
+      params.require(:newz).permit(:names, :title, :publish_date, :body)
     end
 end

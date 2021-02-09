@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 2020_10_09_185002) do
   end
 
   create_table "newzs", force: :cascade do |t|
+    t.string "names"
     t.string "title"
     t.date "publish_date"
     t.text "body"
