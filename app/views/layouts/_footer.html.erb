@@ -277,13 +277,13 @@ ul, li {
                       <section class="is-expanded">
                         <div class="section-title" role="button" tabindex="">
                           <h4>
-                            <a href="<%= newzs_path %>">News</a>
+                            <a href="<%= get_newzs_path %>">News</a>
                           </h4>
                           <i class="wt-icon wt-icon-plus-o-1 opener viewport-small"></i>
                         </div>
                         <ul aria-expanded="true" aria-label="news" role="menu" style="height: 106.667px;">
                           <li role="none">
-                            <a role="menuitem" href="<%= newzs_path %>" tabindex="0">
+                            <a role="menuitem" href="<%= get_newzs_path %>" tabindex="0">
                               <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">All</font>
                               </font>
@@ -635,7 +635,7 @@ ul, li {
             </div>
             <!--  -->
             <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFivee">
-                <a class="card-title"> News </a>
+		    <a class="card-title"href="<%=get_newzs_path  %>" > News </a>
             </div>
             <div id="collapseFivee" class="collapse card-body" data-parent="#accordion">
               <ul aria-expanded="true" aria-label="news" role="menu">

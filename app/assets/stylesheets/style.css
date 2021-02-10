@@ -559,7 +559,8 @@ height:100vh;
 #services {
   padding: 30px 0 40px 0;
   background: #fff;
-  background-repeat: repeat-x;
+ 
+
 }
 
 #services .box {
@@ -1027,7 +1028,7 @@ a:hover {
     
     padding: 100px 0px 150px 0;
     margin: 0;
-    background-repeat: repeat-y;
+
     
   }
   #map-content{
