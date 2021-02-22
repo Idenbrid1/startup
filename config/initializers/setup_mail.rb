@@ -4,5 +4,8 @@ ActionMailer::Base.smtp_settings = {
     :port           => 587,
     :authentication => :plain,
     :user_name      => "mujtaba.testing54321@gmail.com",
-    :password       => "testing54321",
-    :openssl_verify_mode  => 'none' }
+    :password       => "Gabba@5055",
+    :authentication => 'plain',
+    :openssl_verify_mode  => 'none'
+
+}

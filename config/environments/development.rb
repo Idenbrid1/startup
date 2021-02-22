@@ -59,7 +59,6 @@ Rails.application.configure do
 
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default :charset => "utf-8"
   config.action_mailer.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
 
@@ -67,8 +66,13 @@ Rails.application.configure do
     :port           => 587,
     :authentication => :plain,
     :user_name      => "mujtaba.testing54321@gmail.com",
-    :password       => "testing54321",
-    :openssl_verify_mode  => 'none' }
+    :password       => "Gabba@5055",
+    :authentication => 'plain',
+    :openssl_verify_mode  => 'none'
+    
+    
+    
+  }
 
 
   # Raises error for missing translations.

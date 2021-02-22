@@ -120,4 +120,18 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
    
+  config.action_mailer.default_url_options = { :host => 'https://idenbrid.com/' }
+
+  config.action_mailer.asset_host = { :host => 'https://idenbrid.com/' }
+
+  # SMTP settings for gmail
+  config.action_mailer.smtp_settings = {
+      :address              => 'smtp.gmail.com',
+      :port                 => 587,
+      :user_name            => 'mujtaba.testing54321@gmail.com',
+      :password             => 'Gabba@5055',
+      :authentication       => 'plain',
+      # :enable_starttls_auto => true
+  }
+
 end
