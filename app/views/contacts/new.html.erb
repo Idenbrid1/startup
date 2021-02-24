@@ -59,6 +59,7 @@ ul li {
               <%= form_for @contact do |f| %>
                 <div class="col-lg-12">
                   <div class="form-group">
+
                     <%= f.label :Name , :style=> "color:#000;font-weight:600;" %>
                     <%= f.text_field  :name, required: true, class: "form-control", placeholder:"Enter name" %>
                     <%= f.label :Companyname, :style=> "color:#000;font-weight:600;" %>

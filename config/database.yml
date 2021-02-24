@@ -92,3 +92,7 @@ production:
   password: <%= ENV['RDS_PASSWORD'] %>
   host: <%= ENV['RDS_HOST'] %>
   post: 5432
+
+
+
+
